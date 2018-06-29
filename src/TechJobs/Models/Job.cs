@@ -1,4 +1,8 @@
-﻿namespace TechJobs.Models
+﻿using System;
+using System.Collections.Generic;
+using TechJobs.Models;
+
+namespace TechJobs.Models
 {
     public class Job
     {
@@ -17,5 +21,6 @@
             nextId++;
         }
 
+        public List<string> JobFields = new List<string> { "Name", "Employer", "Location", "CoreCompetency", "PositionType" };
     }
 }
